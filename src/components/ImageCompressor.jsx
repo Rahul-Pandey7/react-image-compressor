@@ -4,7 +4,7 @@ import imageCompression from "browser-image-compression";
 
 import Card from "react-bootstrap/Card";
 
-export default class imageCompressor extends React.Component {
+export default class ImageCompressor extends React.Component {
   constructor() {
     super();
     this.state = {
