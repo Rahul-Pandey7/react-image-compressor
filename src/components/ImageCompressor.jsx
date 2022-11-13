@@ -95,7 +95,7 @@ export default class imageCompressor extends React.Component {
           </div>
           <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-baseline">
             <br />
-            {this.state.outputFileName ? (
+            {this.state.outputFileName && (
               <button
                 type="button"
                 className=" btn btn-dark"
@@ -103,14 +103,12 @@ export default class imageCompressor extends React.Component {
               >
                 Compress
               </button>
-            ) : (
-              <></>
             )}
           </div>
 
           <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
             <Card.Img variant="top" src={this.state.compressedLink}></Card.Img>
-            {this.state.clicked ? (
+            {this.state.clicked && (
               <div className="d-flex justify-content-center">
                 <a
                   href={this.state.compressedLink}
@@ -120,8 +118,6 @@ export default class imageCompressor extends React.Component {
                   Download
                 </a>
               </div>
-            ) : (
-              <></>
             )}
           </div>
         </div>
